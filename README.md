@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>اختبار Assignment 3 - الانفرترات والزوايا</title>
+  <title>اختبار الانفرتر و الزوايا</title>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -25,6 +25,7 @@
       margin-bottom: 20px;
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
     }
 
     .question:hover {
@@ -70,6 +71,12 @@
       border-radius: 10px;
       font-size: 18px;
       cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background: #0d47a1;
+      transform: scale(1.03);
     }
 
     #resultBox {
@@ -93,63 +100,74 @@
 </head>
 <body>
 
-<h2>📘 اختبار Assignment 3 - الانفرترات والزوايا</h2>
+<!-- زر العودة -->
+<div style="text-align: center; margin-bottom: 20px;">
+  <a href="https://najy-hub.github.io/Solar-Professional-Engineer/"
+     style="display: inline-block; padding: 12px 24px; background-color: #1976d2; color: white; border-radius: 10px; text-decoration: none; font-weight: bold;">
+    ⬅️ العودة إلى صفحة الكورس
+  </a>
+</div>
 
-<form onsubmit="return handleSubmit();">
+<h2>📘 اختبار حول الانفرترات وزاوية الميل</h2>
+
+<form action="https://script.google.com/macros/s/AKfycbzeO4zPScDZIi6FSjCo4ZEDJaJ8KOXFghSfaUhcF1Yb785kc56VuIgvoZTBjC9XOrkjVA/exec"
+      method="POST"
+      target="hidden_iframe"
+      onsubmit="return handleSubmit();">
 
   <div class="question">
-    <p>1. لا يتم تركيب نظام تتبع ميكانيكي (Tilt angle tracking) بسبب:</p>
-    <label><input type="radio" name="q1" value="الصيانة"> الحاجة لصيانة دورية</label>
-    <label><input type="radio" name="q1" value="الغيوم"> تأثير الطقس الغائم</label>
+    <p>🧑‍🎓 الاسم الكامل:</p>
+    <input type="text" name="name" required placeholder="أدخل اسمك الثلاثي">
+  </div>
+
+  <!-- الأسئلة -->
+  <div class="question">
+    <p>1. لا يتم تركيب mechanical tracking Tilt angle بسبب:</p>
     <label><input type="radio" name="q1" value="كل ماذكر صحيح"> كل ماذكر صحيح</label>
+    <label><input type="radio" name="q1" value="تكاليف الصيانة"> تكاليف الصيانة فقط</label>
+    <label><input type="radio" name="q1" value="أجواء غائمة"> الأجواء الغائمة فقط</label>
   </div>
 
   <div class="question">
-    <p>2. أيهما أفضل في الأنظمة الثابتة (Fixed Angle)؟</p>
-    <label><input type="radio" name="q2" value="Constant yearly"> زاوية ثابتة طوال العام</label>
-    <label><input type="radio" name="q2" value="Adjusted Seasonally"> زاوية متغيرة موسمياً</label>
+    <p>2. فى fixed angle tilt angle ايهما افضل؟</p>
+    <label><input type="radio" name="q2" value="Constant yearly"> Constant yearly</label>
+    <label><input type="radio" name="q2" value="Adjusted Seasonally"> Adjusted Seasonally</label>
   </div>
 
   <div class="question">
-    <p>3. أي نوع من الانفرترات أفضل للأجواء الريفية أو الخلوية؟</p>
+    <p>3. أي أنواع الانفرتر أفضل في الأجواء الخلوية؟</p>
     <label><input type="radio" name="q3" value="Hyper inverter"> Hyper inverter</label>
     <label><input type="radio" name="q3" value="Battery inverter"> Battery inverter</label>
   </div>
 
   <div class="question">
-    <p>4. في المحطات، أي انفرتر يسبب فقداً أكبر في القدرة بسبب خسائر النحاس؟</p>
+    <p>4. في المحطات أي أنواع الانفرتر أكثر فقداً للطاقة (Copper losses)؟</p>
     <label><input type="radio" name="q4" value="String inverter"> String inverter</label>
     <label><input type="radio" name="q4" value="Central inverter"> Central inverter</label>
   </div>
 
   <div class="question">
-    <p>5. يستخدم Micro Inverter في حالة:</p>
-    <label><input type="radio" name="q5" value="اختلاف الزوايا"> اختلاف الزوايا</label>
-    <label><input type="radio" name="q5" value="وجود الظلال"> وجود ظلال</label>
+    <p>5. يستخدم Micro inverter في حالة:</p>
     <label><input type="radio" name="q5" value="كل ماذكر صحيح"> كل ماذكر صحيح</label>
+    <label><input type="radio" name="q5" value="اختلاف زاوية الميل"> اختلاف زاوية الميل فقط</label>
   </div>
 
   <div class="question">
-    <p>6. ما هو البديل الأفضل لحالات Micro Inverter؟</p>
+    <p>6. أي انفرتر يعتبر كحل لمشاكل Micro Inverter؟</p>
     <label><input type="radio" name="q6" value="Battery inverter"> Battery inverter</label>
-    <label><input type="radio" name="q6" value="Hyper inverter"> Hyper inverter</label>
     <label><input type="radio" name="q6" value="Power Optimizer"> Power Optimizer</label>
-    <label><input type="radio" name="q6" value="String inverter"> String inverter</label>
   </div>
 
   <div class="question">
-    <p>7. ما هو Dry contact؟</p>
+    <p>7. Dry contact هو:</p>
+    <label><input type="radio" name="q7" value="تشغيل المولد الاحتياطي"> مخرج لتشغيل المولد الاحتياطي</label>
     <label><input type="radio" name="q7" value="ضبط الانفرتر"> مخرج ضبط الانفرتر</label>
-    <label><input type="radio" name="q7" value="تشغيل المولد"> مخرج لتشغيل المولد الاحتياطي</label>
-    <label><input type="radio" name="q7" value="تبريد الانفرتر"> مخرج تبريد الانفرتر</label>
   </div>
 
   <div class="question">
-    <p>8. أي مرحلة MPPT لا تُستخدم مع كل البطاريات؟</p>
-    <label><input type="radio" name="q8" value="Bulk Stage"> Bulk Stage</label>
-    <label><input type="radio" name="q8" value="Absorpating Stage"> Absorpating Stage</label>
+    <p>8. أي المراحل في MPPT Stage لا تُستخدم في البطاريات السائلة؟</p>
     <label><input type="radio" name="q8" value="Equalize Stage"> Equalize Stage</label>
-    <label><input type="radio" name="q8" value="Floating Stage"> Floating Stage</label>
+    <label><input type="radio" name="q8" value="Bulk Stage"> Bulk Stage</label>
   </div>
 
   <div class="question">
@@ -159,15 +177,22 @@
   </div>
 
   <div class="question">
-    <p>10. لتقليل التكلفة يمكن ضبط Output Mode على:</p>
-    <label><input type="radio" name="q10" value="Utility mode"> Utility mode</label>
+    <p>10. لتقليل التكلفة يمكن ضبط Output Mode في الانفرتر إلى:</p>
     <label><input type="radio" name="q10" value="Inverter Mode"> Inverter Mode</label>
+    <label><input type="radio" name="q10" value="Utility mode"> Utility mode</label>
   </div>
 
-  <button type="submit">إرسال</button>
+  <div class="question">
+    <p>✍️ ملاحظاتك أو تعليقك (اختياري):</p>
+    <textarea name="note" placeholder="اكتب أي ملاحظة أو تعليق هنا..."></textarea>
+  </div>
+
+  <input type="hidden" name="score" id="scoreField">
+  <button type="submit">إرسال الإجابات</button>
 </form>
 
 <div id="resultBox"></div>
+<iframe name="hidden_iframe" style="display:none;"></iframe>
 
 <script>
 function handleSubmit() {
@@ -178,7 +203,7 @@ function handleSubmit() {
     q4: "Central inverter",
     q5: "كل ماذكر صحيح",
     q6: "Power Optimizer",
-    q7: "تشغيل المولد",
+    q7: "تشغيل المولد الاحتياطي",
     q8: "Equalize Stage",
     q9: "لا",
     q10: "Inverter Mode"
@@ -192,11 +217,19 @@ function handleSubmit() {
     }
   }
 
-  const resultBox = document.getElementById("resultBox");
-  resultBox.style.display = "block";
-  resultBox.textContent = `✅ نتيجتك: ${score} من 10 (${Math.round(score * 10)}%)`;
+  const percentage = Math.round((score / 10) * 100);
+  const resultText = `${score} من 10 (${percentage}%)`;
+  document.getElementById("scoreField").value = resultText;
 
-  return false;
+  setTimeout(() => {
+    const name = document.querySelector('input[name="name"]').value;
+    const note = document.querySelector('textarea[name="note"]').value;
+    const box = document.getElementById("resultBox");
+    box.style.display = "block";
+    box.innerHTML = `✅ مرحبًا ${name}<br> نتيجتك: ${resultText}<br><br>✍️ ملاحظتك:<br>${note}`;
+  }, 1000);
+
+  return true;
 }
 </script>
 
