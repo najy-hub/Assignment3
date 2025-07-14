@@ -122,52 +122,58 @@
 
   <!-- الأسئلة -->
   <div class="question">
-    <p>1. لا يتم تركيب mechanical tracking Tilt angle بسبب:</p>
+  <p>1. لا يتم تركيب نظام تتبع ميكانيكي (Tilt angle tracking) بسبب:</p>
+    <label><input type="radio" name="q1" value="الصيانة"> الحاجة لصيانة دورية</label>
+    <label><input type="radio" name="q1" value="الغيوم"> تأثير الطقس الغائم</label>
     <label><input type="radio" name="q1" value="كل ماذكر صحيح"> كل ماذكر صحيح</label>
-    <label><input type="radio" name="q1" value="تكاليف الصيانة"> تكاليف الصيانة فقط</label>
-    <label><input type="radio" name="q1" value="أجواء غائمة"> الأجواء الغائمة فقط</label>
   </div>
 
   <div class="question">
-    <p>2. فى fixed angle tilt angle ايهما افضل؟</p>
-    <label><input type="radio" name="q2" value="Constant yearly"> Constant yearly</label>
-    <label><input type="radio" name="q2" value="Adjusted Seasonally"> Adjusted Seasonally</label>
+    <p>2. أيهما أفضل في الأنظمة الثابتة (Fixed Angle)؟</p>
+    <label><input type="radio" name="q2" value="Constant yearly"> زاوية ثابتة طوال العام</label>
+    <label><input type="radio" name="q2" value="Adjusted Seasonally"> زاوية متغيرة موسمياً</label>
   </div>
 
   <div class="question">
-    <p>3. أي أنواع الانفرتر أفضل في الأجواء الخلوية؟</p>
+    <p>3. أي نوع من الانفرترات أفضل للأجواء الريفية أو الخلوية؟</p>
     <label><input type="radio" name="q3" value="Hyper inverter"> Hyper inverter</label>
     <label><input type="radio" name="q3" value="Battery inverter"> Battery inverter</label>
   </div>
 
   <div class="question">
-    <p>4. في المحطات أي أنواع الانفرتر أكثر فقداً للطاقة (Copper losses)؟</p>
+    <p>4. في المحطات، أي انفرتر يسبب فقداً أكبر في القدرة بسبب خسائر النحاس؟</p>
     <label><input type="radio" name="q4" value="String inverter"> String inverter</label>
     <label><input type="radio" name="q4" value="Central inverter"> Central inverter</label>
   </div>
 
   <div class="question">
-    <p>5. يستخدم Micro inverter في حالة:</p>
+    <p>5. يستخدم Micro Inverter في حالة:</p>
+    <label><input type="radio" name="q5" value="اختلاف الزوايا"> اختلاف الزوايا</label>
+    <label><input type="radio" name="q5" value="وجود الظلال"> وجود ظلال</label>
     <label><input type="radio" name="q5" value="كل ماذكر صحيح"> كل ماذكر صحيح</label>
-    <label><input type="radio" name="q5" value="اختلاف زاوية الميل"> اختلاف زاوية الميل فقط</label>
   </div>
 
   <div class="question">
-    <p>6. أي انفرتر يعتبر كحل لمشاكل Micro Inverter؟</p>
+    <p>6. ما هو البديل الأفضل لحالات Micro Inverter؟</p>
     <label><input type="radio" name="q6" value="Battery inverter"> Battery inverter</label>
+    <label><input type="radio" name="q6" value="Hyper inverter"> Hyper inverter</label>
     <label><input type="radio" name="q6" value="Power Optimizer"> Power Optimizer</label>
+    <label><input type="radio" name="q6" value="String inverter"> String inverter</label>
   </div>
 
   <div class="question">
-    <p>7. Dry contact هو:</p>
-    <label><input type="radio" name="q7" value="تشغيل المولد الاحتياطي"> مخرج لتشغيل المولد الاحتياطي</label>
+    <p>7. ما هو Dry contact؟</p>
     <label><input type="radio" name="q7" value="ضبط الانفرتر"> مخرج ضبط الانفرتر</label>
+    <label><input type="radio" name="q7" value="تشغيل المولد"> مخرج لتشغيل المولد الاحتياطي</label>
+    <label><input type="radio" name="q7" value="تبريد الانفرتر"> مخرج تبريد الانفرتر</label>
   </div>
 
   <div class="question">
-    <p>8. أي المراحل في MPPT Stage لا تُستخدم في البطاريات السائلة؟</p>
-    <label><input type="radio" name="q8" value="Equalize Stage"> Equalize Stage</label>
+    <p>8. أي مرحلة MPPT لا تُستخدم مع كل البطاريات؟</p>
     <label><input type="radio" name="q8" value="Bulk Stage"> Bulk Stage</label>
+    <label><input type="radio" name="q8" value="Absorpating Stage"> Absorpating Stage</label>
+    <label><input type="radio" name="q8" value="Equalize Stage"> Equalize Stage</label>
+    <label><input type="radio" name="q8" value="Floating Stage"> Floating Stage</label>
   </div>
 
   <div class="question">
@@ -177,9 +183,9 @@
   </div>
 
   <div class="question">
-    <p>10. لتقليل التكلفة يمكن ضبط Output Mode في الانفرتر إلى:</p>
-    <label><input type="radio" name="q10" value="Inverter Mode"> Inverter Mode</label>
+    <p>10. لتقليل التكلفة يمكن ضبط Output Mode على:</p>
     <label><input type="radio" name="q10" value="Utility mode"> Utility mode</label>
+    <label><input type="radio" name="q10" value="Inverter Mode"> Inverter Mode</label>
   </div>
 
   <div class="question">
