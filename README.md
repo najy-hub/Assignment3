@@ -177,7 +177,7 @@
   </div>
 
   <div class="question">
-    <p>9. هل يتأثر الانفرتر بدرجة الحرارة المحيطة؟</p>
+    <p>9. لا يتأثر الانفرتر بدرجة الحرارة المحيطة؟</p>
     <label><input type="radio" name="q9" value="نعم"> نعم</label>
     <label><input type="radio" name="q9" value="لا"> لا</label>
   </div>
@@ -209,7 +209,7 @@ function handleSubmit() {
     q4: "Central inverter",
     q5: "كل ماذكر صحيح",
     q6: "Power Optimizer",
-    q7: "تشغيل المولد الاحتياطي",
+    q7:  "تشغيل المولد",
     q8: "Equalize Stage",
     q9: "لا",
     q10: "Inverter Mode"
